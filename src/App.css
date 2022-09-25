@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toDoFade-enter {
+  opacity: 0;
+}
+.toDoFade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.toDoFade-exit {
+  opacity: 1;
+}
+.toDoFade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backdrop-enter {
+  opacity: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.backdrop-enter-active {
+  opacity: .8;
+  transition: opacity 500ms;
 }
-
-.App-link {
-  color: #61dafb;
+.backdrop-exit {
+  opacity: .8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backdrop-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }
